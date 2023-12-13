@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Lobster";
+	src: url('../fonts/Lobster.ttf');
+}
+
+@font-face {
+	font-family: 'Caveat', cursive;
+}
+
+body {
+	background: antiquewhite;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	margin-top: 30px;
+	font-family: Lobster;
+	font-size: 72px;
+}
+
+h2 {
+	margin: 0;
+	margin-bottom: 30px;
+	font-family: Lobster;
+	font-size: 60px;
+}
+
+a {
+	margin: 0;
+	font-family: Caveat;
+	font-size: 45px;
+}
+
+.screen {
+	min-width: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Lobster";
+	src: url('../fonts/Lobster.ttf');
+}
+
+body{
+	
+	background: antiquewhite;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+  padding: 0;
+}
+
+h1 {
+	margin-top: 30px;
+	font-family: Lobster;
+	font-size: 60px;
+}
+
+h2 {
+	margin: 0;
+	margin-bottom: 30px;
+	font-family: Lobster;
+	font-size: 45px;
+}
+
+h3 {
+	font-family: Lobster;
+	font-size: 25px;
+}
+
+img {
+	height: 450px;
+	margin: 10px;
+}
+
+audio {
+	margin-top: 20px;
+}
+
+.screen {
+	min-width: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+	        
+.column {
+	flex: 1;
+	padding: 10px;
+}
+
+.content_box {
+	border: 5px solid #B0C4DE;
+	border-radius: 15px;
+	background: #B0C4DE;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #4386FC;
+}
+
+.footer_text {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 10px;
+  font-family: Lobster;
+  font-size: 45px;
+}
+
+.mail_icon {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 40%;
+	top: 41%;
+}

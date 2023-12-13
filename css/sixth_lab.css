@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Lobster";
+	src: url('../fonts/Lobster.ttf');
+}
+
+body{
+	background: antiquewhite;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-family: Lobster;
+	font-size: 60px;
+}
+
+h2 {
+	margin-bottom: 30px;
+	font-family: Lobster;
+	font-size: 45px;
+}
+
+h3 {
+	font-family: Lobster;
+	font-size: 25px;
+}
+
+button {
+   margin-bottom: 5px;
+}

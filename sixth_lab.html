@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Лабораторна робота №6</title>
+
+		<link rel="icon" href="images/favicon.png" type="image/png">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="css/sixth_lab.css">
+	</head>
+	<body>
+        <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="margin: 15px;">Навігація</button>
+        
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasScrollingLabel">Навігація сторінкою:</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <button class="btn btn-primary btn-lg w-100" onclick="scrollToHeader('biography')">Біографія</button>
+                <button class="btn btn-primary btn-lg w-100" onclick="scrollToHeader('philosophy_aspects')">Осноні аспекти філософії</button>
+            </div>
+        </div>
+
+		<div class="container">
+			<h1 class="text-center">Лабораторна робота №6</h1>
+			<h2 class="text-center">Бібліотека Bootstrap</h2>
+
+			<div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+            		<h2 class="text-center" id="biography">Біографія</h2>
+            		<div class="card">
+               			<img src="images/nietzsche.jpg" class="card-img-top" alt="...">
+               			<div class="card-body">
+                  			<h5 class="card-title">Фрідріх Ніцше</h5>
+                  			<p class="card-text">Фрідріх Ніцше (1844–1900) був німецьким філософом, відомим своєю глибокою критикою традиційної моралі, релігії і філософії свого часу. Він висловлював протест проти того, що вважав застарілими ідеями і вченнями, і ставив під сумнів прийняті норми і цінності.</p>
+                  			<button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#redirect_modal">Читати більше</button>
+               			</div>
+            		</div>
+        		</div>
+
+        		<!-- Modal -->
+				<div class="modal fade" id="redirect_modal" tabindex="-1" role="dialog" aria-labelledby="redirectModalLabel" aria-hidden="true">
+				  	<div class="modal-dialog" role="document">
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<h5 class="modal-title" id="redirectModalLabel">Перехід на зовнішній ресурс</h5>
+				      		</div>
+				      		<div class="modal-body">
+				        		<p>Це посилання веде на зовнішній ресурс. Ви впевнені що хочете перейти на іншу сторінку?</p>
+				      		</div>
+				      		<div class="modal-footer">
+				        		<a href="https://uk.wikipedia.org/wiki/%D0%A4%D1%80%D1%96%D0%B4%D1%80%D1%96%D1%85_%D0%9D%D1%96%D1%86%D1%88%D0%B5" target="_blank" class="btn btn-primary">Перейти</a>
+				        		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Залишитись тут</button>
+				      		</div>
+				    	</div>
+				  	</div>
+				</div>
+
+        		<div class="col-xl-9 col-lg-8 col-md-6">
+            		<h2 class="text-center">Періоди творчості</h2>
+            		<div class="accordion" id="accordion_panel">
+               			<div class="accordion-item">
+                  			<h2 class="accordion-header">
+	                     		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#open_close_one" aria-expanded="true" aria-controls="open_close_one">
+	                        		1872—1876 роки
+	                    		</button>
+                  			</h2>
+                  			<div id="open_close_one" class="accordion-collapse collapse show">
+		                     	<div class="accordion-body">
+			                        Написано перші роботи: «Походження трагедії з духу музики» (1872); «Філософія в трагічну епоху Греції» (1873); «Про істину й неправду в позаморальному розумінні» (1873); «Наука й мудрість у боротьбі» (1875); «Несвоєчасні міркування» (1873—1876).<br>Уже в цей період Ніцше охоплюють душевні страждання, що знайшли відображення в його творчості. Усвідомлення трагічності буття змушує людину піднестися над нею: «Людина повинна знайти в собі щось таке, щоб не боятися цього світу». Ніцше був переконаний, що в цьому світі не можна знайти справжній прихисток від страждань, заподіяних зовнішнім світом сприйнять, тому він прагнув піднестися вгору. У певному розумінні він перетворився на фанатика віри. Сам розвиток науки був для нього внутрішньою трагедією, трагедією сучасної науковості.<br>Протилежність життя й розуму стає основою ніцшеанської теорії. Свій перший твір він присвятив аналізу культури античної Греції, зокрема розгляду античної трагедії; він розвиває ідею типології культури, означену Шиллером, Шеллінгом, іншими німецькими романтиками. Предметом його поклоніння в перший період було мистецтво. Він порівнює два начала:
+									<ul>
+										<li>діонісійське — життєве, буйне, трагічне;</li>
+										<li>аполлонівське — споглядальне, однобічно інтелектуальне.</li>
+									</ul>
+									Філософ усвідомлює рівновагу двох начал: буйного й спокійного. Уже тут містяться зачатки вчення про «буття» як стихійне зіткнення, розвинутого пізніше у вченні про прагнення до сили, яке властиве всьому живому, що прагне до свого самоствердження.
+		                     	</div>
+	                  		</div>
+               			</div>
+
+               			<div class="accordion-item">
+                  			<h2 class="accordion-header">
+	                     		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#open_close_two" aria-expanded="false" aria-controls="open_close_two">
+	                        		1878—1882 роки
+	                    		</button>
+                  			</h2>
+                  			<div id="open_close_two" class="accordion-collapse collapse">
+		                     	<div class="accordion-body">
+			                        Ніцше розробляє проблеми людського пізнання, виявляє зацікавленість позитивізмом і природознавством.<br>Роботи цього періоду: «Людське, занадто людське» (1878—1880) — автор вдається до різкої критики моралі тогочасного суспільства; «Ранкова зоря» (1881); «Весела наука» (1882) — розвиває концепцію «переоцінки цінностей».<br>Основна проблема цього періоду — накопичення душевних переживань, завдяки яким у душу ллється «вогненне життя». Це життя лише на мить могло піднятися над душевною невдоволеністю. Внутрішнє переживання трактувалося як доповнення до зовнішнього сприйняття. Ніцше намагався піднестися над однобічним світом сприйняття. Його твори вибудувані, як низка афоризмів.
+		                     	</div>
+	                  		</div>
+               			</div>
+
+               			<div class="accordion-item">
+                  			<h2 class="accordion-header">
+	                     		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#open_close_three" aria-expanded="false" aria-controls="open_close_three">
+	                        		1883—1889 роки
+	                    		</button>
+                  			</h2>
+                  			<div id="open_close_three" class="accordion-collapse collapse">
+		                     	<div class="accordion-body">
+			                        Основні роботи: «По той бік добра й зла» (1883—1886); «Генеалогія моралі» (1887); «Так казав Заратустра. Книга для всіх і ні для кого» (1883—1885); «Антихристиянин» (1888); «Сутінки кумирів».<br>У творчості Ніцше поняття не вибудовуються в струнку систему, а з'являються як багатозначні символи: «життя», «воля до влади», що є саме буття в його динамічності, пристрасть та інстинкт, самозбереження. У цей період вводиться у вжиток поняття «надлюдина» як зміст землі. «Хай буде надлюдина смислом землі!», «Надлюдина — це море, де потоне презирство ваше. Надлюдина — це блискавка, це божевілля!»<br>«Велич людини в тому, що вона є мостом, а не ціллю; і любові в ній гідне лише те, що вона є переходом і знищенням. Я люблю того, хто не вміє жити інакше, окрім як в ім'я власної загибелі, тому що він іде через міст».
+		                     	</div>
+	                  		</div>
+               			</div>
+                  	</div>
+                </div>
+            </div><!-- row -->
+
+			<div class="row">
+        		<h2 class="text-center" id="philosophy_aspects">Основні аспекти філософії Ніцше:</h2>
+        		<div class="col-xl-3 col-lg-4 col-md-4 box-1">
+            		<p><b>Воля до влади:</b><br>Ніцше вважав "волю до влади" основним побудовою людської природи. Він стверджував, що це прагнення до влади і владарювання є джерелом всіх людських дій та цінностей.</p>
+        		</div>
+        		<div class="col-xl-3 col-lg-4 col-md-4 box-2">
+            		<p><b>Надлюдина (Übermensch):</b><br>Ніцше вводить ідею "надлюдини" як ідеал, який перевершує сучасну людину. Надлюдина здатна визначати власні цінності, незалежно від традиційних норм і моралі. Вона створює свої власні цінності на основі творчості і владарювання над власним життям. </p>
+        		</div>
+        		<div class="col-xl-3 col-lg-4 col-md-4 box-4">
+            		<p><b>Протиставлення ідей:</b><br>Ніцше виступав проти ідей, що обмежують індивіда, і визнавав потребу в переоцінці цінностей для створення нового, більш ефективного світу.</p>
+        		</div>
+        		<div class="col-xl-3 col-lg-12 col-md-12 box-3">
+            		<p><b>Відмова від релігії та моралі:</b><br>Ніцше виступав проти традиційної релігії та моралі, які, на його думку, пригнічують індивіда і заважають виявляти його справжній потенціал. В багатьох своїх творах, зокрема "За межами добра і зла", Ніцше висловлював сумніви в ідеї абсолютної моралі. Він підкреслював релятивність моральних цінностей і висловлювався проти жорстких дихотомій "добра" і "зла".</p>
+        		</div>
+    		</div><!-- row -->
+
+		</div><!-- container -->
+
+		<footer class="bg-dark text-light text-center py-3">
+    		<div class="container">
+    			<ul class="nav nav-tabs" id="myTab" role="tablist">
+               		<li class="nav-item" role="presentation">
+                  		<button class="nav-link active btn-dark" id="about_author" data-bs-toggle="tab" data-bs-target="#about_author_pane" type="button" role="tab" aria-controls="about_author_pane" aria-selected="true">Про автора</button>
+               		</li>
+               		<li class="nav-item" role="presentation">
+                  		<button class="nav-link btn-dark" id="author_contact" data-bs-toggle="tab" data-bs-target="#author_contact_pane" type="button" role="tab" aria-controls="author_contact_pane" aria-selected="false">Контакт</button>
+               		</li>
+            	</ul>
+            	<div class="tab-content" id="myTabContent">
+               		<div class="tab-pane fade show active" id="about_author_pane" role="tabpanel" aria-labelledby="about_author" tabindex="0">
+                  		<h3>Про автора</h3>
+                  		<p>Бідний студент без копійки за душею, що дуже стомився робити цей сайт о 3 ночі. Краще б пивка випив...</p>
+               		</div>
+               		<div class="tab-pane fade" id="author_contact_pane" role="tabpanel" aria-labelledby="author_contact" tabindex="0">
+                  		<h3>Контакт</h3>
+                  		<p>yurii.chaplia.ki.2019@lpnu.ua</p>
+               		</div>
+            	</div>
+      			<p>&copy; 2023 Yurko</p>
+    		</div>
+  		</footer>
+
+		<script src="bootstrap/js/bootstrap.js"></script>
+
+		<script>
+    		function scrollToHeader(headerId) {
+        		var headerElement = document.getElementById(headerId);
+
+        		if (headerElement) {
+            		headerElement.scrollIntoView({ behavior: 'smooth' });
+        		}
+    		}
+		</script>
+	</body>
+</html

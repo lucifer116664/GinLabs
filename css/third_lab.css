@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Caveat', cursive;
+}
+
+@font-face {
+	font-family: "Lobster";
+	src: url('../fonts/Lobster.ttf');
+}
+
+body{
+	
+	background: antiquewhite;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+    padding: 0;
+}
+
+h1 {
+	margin: 0;
+	font-family: Lobster;
+	font-size: 60px;
+}
+
+h2 {
+	margin: 0;
+	font-family: Lobster;
+	font-size: 45px;
+}
+
+h3 {
+	font-family: Lobster;
+	font-size: 25px;
+}
+
+img {
+	height: 450px;
+	margin: 10px;
+}
+
+li {
+	font-family: Caveat;
+	font-size: 25px;
+}
+
+.screen {
+	min-width: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+	        
+.column {
+	flex: 1;
+	padding: 10px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #4386FC;
+}
+
+.footer_text {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 10px;
+  font-family: Caveat;
+  font-size: 45px;
+}
+
+.mail_icon {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 42%;
+	top: 40%;
+}
+
+/*INSTAGRAM ANIMATRION BELOW*/
+@keyframes rectangular_anim {
+	0% {
+		left: -500px;
+	}
+	25% {
+	}
+	50% {
+	}
+	75% {
+	}
+	100% {
+		left: 250px; 
+	}
+}
+@keyframes circle_anim {
+	0% {
+		left: -1000px;
+	}
+	25% {
+	}
+	50% {
+		left: 373px;  
+	}
+	75%{
+	}
+	100%{
+	}
+}
+@keyframes dot_anim {
+	0% {	
+		top: -100px;
+	}
+	25% {
+	}
+	50% {
+	 	top: 100px;  
+	}
+	75% {
+	}
+	100% {
+	}	
+}
+.inst_bg {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	top: 120px;
+	background:  
+	linear-gradient(#400080, transparent), 
+	linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+	border-radius: 25%;
+}
+.inst_rectangular {  
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	border-radius: 25%;
+	animation-name: rectangular_anim;
+	border: 35px solid antiquewhite;
+	animation-duration: 3s;
+	top: 180px;
+}
+
+
+.inst_circle { 
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	border: 35px solid antiquewhite;
+	animation-name: circle_anim;
+	animation-duration: 3s;
+	top:300px;
+}
+
+.inst_dot {   
+	position: absolute;
+	width: 40px;
+	height:40px;
+	background: antiquewhite;
+	border-radius: 100%;
+	animation-name: dot_anim;
+	animation-duration: 3s;
+	top:235px;
+	left: 570px;  
+}
